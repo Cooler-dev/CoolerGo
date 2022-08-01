@@ -8,4 +8,7 @@ install:
 	go mod tiny
 
 build:
-	./scripts/build-backend.sh
+	go build . -o bin/cooler-go
+
+clean:
+	rm -rf bin/*

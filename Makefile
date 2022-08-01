@@ -10,5 +10,11 @@ install:
 build:
 	go build -o bin/cooler-go
 
+dev-build:
+	go build -o bin/cooler-go-dev-$(COMMIT_HASH)
+
+dev:
+	go run .
+
 clean:
 	rm -rf bin/*

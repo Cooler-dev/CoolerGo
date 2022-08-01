@@ -8,7 +8,7 @@ install:
 	go mod tiny
 
 build:
-	go build . -o bin/cooler-go
+	go build -o bin/cooler-go
 
 clean:
 	rm -rf bin/*

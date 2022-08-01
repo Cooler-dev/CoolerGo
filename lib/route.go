@@ -7,5 +7,5 @@ import (
 
 func Route() {
 	e := echo.New()
-	e.GET("/", http.Welcome())
+	e.GET("/", http.Welcome)
 }
